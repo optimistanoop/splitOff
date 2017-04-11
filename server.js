@@ -28,6 +28,9 @@ spoApp.get('/', (request, response) => {
     response.sendFile(path.join(publicDir, 'index.html'));
     //response.render(path.join(publicDir, 'index'));
 })
+spoApp.get('/name/:name', (request, response) => {
+    response.send("name is set to " + request.params.name);
+})
 
 // Listen Port
 spoApp.listen(2500, (request, response) => {
