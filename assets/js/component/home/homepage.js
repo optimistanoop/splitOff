@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 
-// import HomePage from './assets/js/component/home/homepage.js';
-
 class HomePage extends Component {
   render() {
       return (
@@ -11,6 +9,22 @@ class HomePage extends Component {
                   Name:
                   <input type="text" name="name" />
               </label>
+
+              <label>
+                  Name:
+                  <input type="text" name="email" />
+              </label>
+
+              <label>
+                  Name:
+                  <input type="text" name="number" />
+              </label>
+
+              <label>
+                  Name:
+                  <input type="text" name="address" />
+              </label>
+
               <input type="submit" value="Submit" />
           </form>
       )

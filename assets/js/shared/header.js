@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
       return (
           <header>
-              <center><h1>SplitOff</h1></center>
+              <center><img src="./img/quikr_homes_logo.png" /></center>
           </header>
       )
   }
