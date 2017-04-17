@@ -11,17 +11,17 @@ class HomePage extends Component {
               </label>
 
               <label>
-                  Name:
+                  Email:
                   <input type="text" name="email" />
               </label>
 
               <label>
-                  Name:
+                  Number:
                   <input type="text" name="number" />
               </label>
 
               <label>
-                  Name:
+                  Address:
                   <input type="text" name="address" />
               </label>
 
