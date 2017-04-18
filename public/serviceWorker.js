@@ -2,9 +2,9 @@
 let cacheName = 'splitOff_s_w';
 let filesToCache = [
   '/',
-  '/index.html',
-  '/scripts/app.js',
-  '/styles/inline.css'
+  '../index.html',
+  '/build/index_bundle.js'
+
 ];
 
 self.addEventListener('install', function(e) {
