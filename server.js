@@ -1,9 +1,28 @@
+var https = require('https');
+var http = require('http');
+var fs = require('fs');
 // 1. Include Express Package
 const spoExpress = require('express');
+
+// This line is from the Node.js HTTPS documentation.
+var options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+};
 
 // Use Express framework in app
 const spoApp = spoExpress();
 
+http.createServer(spoApp).listen(2500);
+https.createServer(options, spoApp).listen(2500);
+
+// Create an HTTP service.
+//http.createServer(spoApp).listen(80);
+
+// Create an HTTPS service identical to the HTTP service.
+// https.createServer(options, spoApp).listen(443 , (req , res)=>{
+//   console.log('Port 2500 is active');
+// });
 // Get Directory Path Package
 var path = require('path');
 
@@ -33,6 +52,6 @@ spoApp.get('/name/:name', (request, response) => {
 })
 
 // Listen Port
-spoApp.listen(2500, (request, response) => {
-    console.log('Port 2500 is active');
-});
+// spoApp.listen(2500, (request, response) => {
+//     console.log('Port 2500 is active');
+// });
