@@ -13,8 +13,8 @@ var options = {
 // Use Express framework in app
 const spoApp = spoExpress();
 
-http.createServer(spoApp).listen(2500);
-https.createServer(options, spoApp).listen(2500);
+http.createServer(spoApp).listen(80);
+https.createServer(options, spoApp).listen(443);
 
 // Create an HTTP service.
 //http.createServer(spoApp).listen(80);
