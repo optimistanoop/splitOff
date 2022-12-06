@@ -9,7 +9,7 @@
   "author": "Mr. Gupta <hgupta@quikr.com>",
   "license": "copy right 2017",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "install": "^0.8.8",
     "path": "^0.12.7",
     "react": "^15.4.2",
